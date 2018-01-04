@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Dimension Friend",
+  "version": "1.0",
+
+  "description": "Dimension friend shows you the browser viewport dimensions when reisizing, and will also help you resize the window to specific dimensions, if you want.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_scripts/show.js"]
+    }
+  ]
+}
